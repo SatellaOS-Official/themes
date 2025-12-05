@@ -19,6 +19,6 @@ echo ">>> violet renk uygulanıyor..."
 papirus-folders -C violet --theme Papirus
 
 echo ">>> ikon önbelleği yenileniyor..."
-gtk-update-icon-cache -f /usr/share/icons/Papirus
+sudo gtk-update-icon-cache -f /usr/share/icons/*
 
 echo ">>> İşlem tamam! Oturumu kapatıp açarsanız değişiklikler görünür."
