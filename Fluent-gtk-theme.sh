@@ -1,5 +1,5 @@
 #!/bin/bash
-# Fluent GTK tema kurulumu (XFCE, saydamlık yok)
+# Fluent GTK tema kurulumu (XFCE, saydamlık yok) - Sisteme kurulum (/usr/share/themes)
 
 # Gereken paketleri yükle
 sudo apt update
@@ -11,5 +11,5 @@ git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
 # Klasöre geç
 cd Fluent-gtk-theme/ || exit
 
-# GTK temasını yükle (tüm temalar, saydamlık yok)
-./install.sh --dest "$HOME/.themes" --theme all --tweaks solid
+# GTK temasını /usr/share/themes içine yükle (tüm temalar, saydamlık yok)
+sudo ./install.sh --dest /usr/share/themes --theme all --tweaks solid
